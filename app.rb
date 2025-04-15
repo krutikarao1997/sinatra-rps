@@ -40,7 +40,7 @@ get("/scissors") do
   @comp_move = moves.sample
 
   if @comp_move == "rock"
-    @outcome = "Tied"
+    @outcome = "Lost"
   elsif @comp_move == "paper"
     @outcome = "Won"
   else 
@@ -49,4 +49,3 @@ get("/scissors") do
 
   erb(:scissors)
 end
-
